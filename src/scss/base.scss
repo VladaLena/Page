@@ -125,3 +125,17 @@
     display: none;
   }
 }
+
+.btn{
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 0.8em 3em !important;
+  &:hover{
+    background:#fff;
+    color: $mainDark;
+  }
+}
+
+* {
+  outline: 1px solid white;
+}
