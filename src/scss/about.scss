@@ -1,0 +1,175 @@
+.about-me {
+  // min-height: 100%;
+  // min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+
+  // .about-me__container
+
+  &__container {
+    padding: 30px 65px;
+    color: rgb(34, 33, 33);
+    display: flex;
+    // grid-template-columns: repeat(2, 30% 70%);
+    flex-direction: row;
+    column-gap: rem(35);
+    // justify-content: center;
+    // text-align: center;
+    align-items: flex-start;
+    @media (max-width: rem(700)) {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      row-gap: 20px;
+    }
+  }
+}
+.row-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // .row-info__profile
+
+  &__profile {
+    padding-top: rem(4);
+
+    :not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+}
+.profile-row-info {
+  // .profile-row-info__heading
+
+  &__heading {
+  }
+
+  // .profile-row-info__heading
+
+  &__heading {
+    text-align: center;
+    font-size: rem(18);
+    text-transform: capitalize;
+    font-weight: 800;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 45%;
+      display: block;
+      border: 1px solid rgba(34, 33, 33);
+      border-radius: 5px;
+      right: 28%;
+      top: 200%;
+      @media (max-width: em(700)) {
+        width: 30%;
+        right: 35.5%;
+      }
+    }
+  }
+
+  // .profile-row-info__personal-wrapper
+
+  &__personal-wrapper {
+    padding-top: rem(27);
+    text-align: center;
+    font-size: rem(12);
+    letter-spacing: 1px;
+    strong {
+      font-size: rem(12);
+      // line-height: 185%;
+      font-weight: 800;
+      // text-align: center;
+      display: block;
+      color: $mainDark;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+.row-who {
+  // .row-who__introduction
+
+  &__introduction {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+.introduction-row-who {
+  font-size: rem(16);
+  line-height: 155%;
+
+  // .introduction-row-who__heading
+
+  &__heading {
+    margin-bottom: rem(30);
+    text-align: left;
+    font-size: rem(18);
+    text-transform: capitalize;
+    font-weight: 800;
+    position: relative;
+    @media (max-width: em(700)) {
+      text-align: center;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20%;
+      display: block;
+      border: 1px solid rgba(34, 33, 33);
+      border-radius: 5px;
+      left: 0%;
+      top: 160%;
+      @media (max-width: em(700)) {
+        left: 42.3%;
+        width: 15%;
+      }
+      @media (max-width: em(500)) {
+        left: 40%;
+        width: 20%;
+      }
+    }
+
+    .heading-profile-line {
+    }
+
+    // .introduction-row-who__who
+
+    &__who {
+      font-size: rem(16);
+    }
+
+    // .introduction-row-who__intro
+
+    &__intro {
+    }
+  }
+}
+
+@-webkit-keyframes pulsing {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulsing {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
